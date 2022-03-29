@@ -1,6 +1,6 @@
 # contact_us_page
 
-Abeautifull contatc form made using flutter to be used in your projects.
+Abeautifull contact form made using flutter to be used in your projects.
 
 ## Getting Started
 
