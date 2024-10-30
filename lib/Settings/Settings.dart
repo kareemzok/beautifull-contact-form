@@ -23,16 +23,7 @@ class SettingFormState extends State<SettingPage> {
         context,
         designSize: Size(360, 690),
         minTextAdapt: true);
-    return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the Tab Page object that was created by
-        backgroundColor: Color(0xFF342d50),
-        title: Text("Contact us"),
-        centerTitle: true, // placing the title in the middle of the appbar
-        automaticallyImplyLeading: false,
-      ),
-      body:SingleChildScrollView(
-        child :SettingsList(
+    return SettingsList(
           sections: [
             SettingsSection(
               title: Text('Common'),
@@ -51,8 +42,7 @@ class SettingFormState extends State<SettingPage> {
               ],
             ),
           ],
-        ),
-      )
-    );
+        );
+
   }
 }
