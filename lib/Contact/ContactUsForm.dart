@@ -65,23 +65,10 @@ class ContactUsFormState extends State<ContactUsForm> {
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(
-        BoxConstraints(
-            maxWidth: MediaQuery.of(context).size.width,
-            maxHeight: MediaQuery.of(context).size.height),
-        designSize: Size(392, 690),
-        context: context,
-        minTextAdapt: true,
-        orientation: Orientation.portrait);
-    return  OKToast(child: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          // Here we take the value from the Tab Page object that was created by
-          backgroundColor: Color(0xFF342d50),
-          title: Text("Contact us"),
-          centerTitle: true, // placing the title in the middle of the appbar
-          automaticallyImplyLeading: false,
-        ),
-        body: SingleChildScrollView(
+        context,
+        designSize: Size(360, 690),
+        minTextAdapt: true);
+    return SingleChildScrollView(
           child: Form(
               key: _formKey,
               child: Column(
@@ -251,7 +238,6 @@ class ContactUsFormState extends State<ContactUsForm> {
                       ),
                     )
                   ])),
-        )
-    ));
+        );
   }
 }

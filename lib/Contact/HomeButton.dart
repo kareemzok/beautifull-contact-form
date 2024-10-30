@@ -14,7 +14,7 @@ class HomeButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: 50,
-        width: 200,
+        width: 300,
         decoration: BoxDecoration(
           color: themeColor,
           borderRadius: BorderRadius.circular(22),
