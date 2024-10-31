@@ -4,7 +4,6 @@ A beautiful contact form made using flutter to be used in your projects.
 
 ![alt text](https://github.com/kareemzok/beautifull-contact-form/blob/main/assets/home.png?raw=true)
 ![alt text](https://github.com/kareemzok/beautifull-contact-form/blob/main/assets/contactus.png?raw=true)
-![alt text](https://github.com/kareemzok/beautifull-contact-form/blob/main/assets/thankyou.JPG?raw=true)
 
 
 ## Getting Started
