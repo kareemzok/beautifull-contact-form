@@ -1,6 +1,4 @@
 
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:settings_ui/settings_ui.dart';
 import 'package:flutter/material.dart';
@@ -41,6 +39,30 @@ class SettingFormState extends State<SettingPage> {
                 ),
               ],
             ),
+            SettingsSection(
+              title: Text('Notification'),
+              tiles: [
+                SettingsTile(
+                  title: Text('Do Not Disturb'),
+                  description: Text('Off / 1 schedule can turn on automatically'),
+                ),
+                SettingsTile(
+                  title: Text('Wireless emergency alerts'),
+                ),
+                SettingsTile.switchTile(
+                  initialValue: false,
+                  onToggle: (_) {},
+                  title: Text('Hide silent notifications in status bar'),
+                ),
+                SettingsTile.switchTile(
+                  initialValue: false,
+                  onToggle: (_) {},
+                  title: Text('Allow notification snoozing'),
+                ),
+
+              ],
+            ),
+
           ],
         );
 

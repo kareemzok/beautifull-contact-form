@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'Home.dart';
 import 'Contact/ContactUsForm.dart';
 import 'Settings/Settings.dart';
-import 'Contact/HomeButton.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'dart:developer' as developer;
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
 
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Contact Form demo',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter App Demo'),
     );
   }
 }
@@ -161,8 +160,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                 setState(() {
                   _selectedIndex = index;
                   currentTitle = bottomNavTitle[index];
-
-                  developer.log('index: $index');
+                  //developer.log('index: $index');
                 });
               },
 
